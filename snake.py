@@ -2,6 +2,11 @@ from turtle import Turtle
 
 STARTING_POSITION = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
+
 
 class Snake:
 
@@ -27,9 +32,12 @@ class Snake:
 
     def up(self):
         self.head.setheading(90)
+
     def down(self):
         self.head.setheading(270)
+
     def left(self):
         self.head.setheading(180)
+
     def right(self):
         self.head.setheading(0)
