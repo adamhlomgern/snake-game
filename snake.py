@@ -23,6 +23,12 @@ class Snake:
             new_segment.goto(position)
             self.segments.append(new_segment)
 
+    # def add_segment(self, position):
+    #
+    # def extend(self):
+    #     # Add a new segment every time the snake collides with its own tail.
+
+
     def move(self):
         for seg_num in range(len(self.segments) - 1, 0, -1):
             new_x = self.segments[seg_num - 1].xcor()
